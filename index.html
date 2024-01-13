@@ -5,17 +5,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
+        <!-- remixicon -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"rel="stylesheet"/>
+        <!-- box-link -->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     </head>
     <body>
     <div class="container">
-    <h1>Generate <br>Random Password</h1>
+    <h1>Generate<br><span>Random Password</span></h1>
     <div class="display">
     <input type="text"  id="password" placeholder="Password">
-    <button onclick="copy()">Copy</button>
-    <div>
-    <button onclick="rdom()">Generate</button>
-</div>
+    <i onclick="copy()" class="ri-file-copy-2-line"></i>
     </div>
+    <div class="gen">
+    <i onclick= "rdom()" class="ri-shuffle-line"> Generate</i>
+</div>
     </div>
     <script src="pass.js"></script>
     </body>
